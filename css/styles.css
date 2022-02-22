@@ -119,7 +119,9 @@ h6 {
 .current::after {
   position: absolute;
   bottom: -1%;
+
   display: block;
+
   width: 100%;
   height: 4px;
   background-color: var(--accent-text-color);
@@ -136,6 +138,7 @@ h6 {
 .contacts-nav .link {
   display: flex;
   align-items: center;
+
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -176,6 +179,7 @@ h6 {
     url("../images/hero-image.jpg");
   background-repeat: no-repeat;
   background-position: center;
+
   max-width: 1600px;
   min-height: 600px;
   margin-right: auto;
@@ -184,6 +188,7 @@ h6 {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--accent-bacground);
+
   text-align: center;
 }
 .hero-tytle {
@@ -193,15 +198,16 @@ h6 {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 .button {
   cursor: pointer;
-  font-family: inherit;
+  
   border-radius: 4px;
   border: transparent;
+
+  font-family: inherit;
 }
 .button.primary {
   min-width: 200px;
@@ -210,22 +216,25 @@ h6 {
   border: transparent;
 
   color: var(--accent-title-color);
-  background-color: var(--button-background);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+  letter-spacing: 0.06em;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.06em;
+
+  background-color: var(--button-background);
 }
 .hero-backdrop {
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
+
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
+
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-backdrop.is-hidden {
@@ -237,6 +246,7 @@ h6 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
   width: 528px;
 
   padding-top: 40px;
@@ -257,6 +267,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
+
   width: 30px;
   height: 30px;
   margin-left: auto;
@@ -272,14 +283,15 @@ h6 {
   fill: var(--accent-text-color);
 }
 .modal-title {
+  margin-bottom: 12px;
+
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
 
   color: var(--title-text-color);
-  margin-bottom: 12px;
 }
 .modal-form {
   width: 100%;
@@ -296,25 +308,25 @@ h6 {
 .form-field label {
   margin-bottom: 4px;
   margin-right: auto;
+
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
 }
-.modal-form-input {
-  cursor: pointer;
+.modal-form-input {  
   padding-top: 12px;
   padding-right: 12px;
   padding-bottom: 12px;
   padding-left: 42px;
 
-  border-radius: 3px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-
-  border-radius: 4px;
+ border-radius: 4px;
   width: 100%;
   height: 40px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   outline: none;
+  cursor: pointer;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-icon {
@@ -325,6 +337,7 @@ h6 {
   display: block;
   width: 18px;
   height: 18px;
+
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -337,15 +350,16 @@ h6 {
   fill: var(--accent-text-color);
 }
 
-.form-field textarea {
-  resize: none;
+.form-field textarea { 
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
+  resize: none;
   cursor: pointer;
   outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-field textarea::placeholder {
   font-size: 12px;
@@ -359,17 +373,21 @@ h6 {
 }
 
 .checkbox-field {
-  display: flex;
-  align-items: flex-end;
+  display: flex; 
   justify-content: space-around;
+
   margin-top: 20px;
 }
 .checkbox-label {
+  display: flex;
+  align-items: center;
+
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
+
 .checkbox-input {
   border: 0;
   clip: rect(0 0 0 0);
@@ -385,6 +403,8 @@ h6 {
 }
 .checkbox-icon-check {
   display: inline-block;
+
+  margin-right: 7px;
   width: 16px;
   height: 15px;
   border: 1px solid var(--accent-one-color);
@@ -405,16 +425,16 @@ h6 {
   cursor: pointer;
   border: transparent;
 
+  margin-top: 30px;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-
   align-items: center;
   text-align: center;
-  letter-spacing: 0.06em;
-  margin-top: 30px;
+  letter-spacing: 0.06em; 
   color: var(--accent-title-color);
   background: #2196f3;
+
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -434,6 +454,7 @@ h6 {
 }
 .feature-item {
   margin-bottom: 10px;
+
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -446,8 +467,8 @@ h6 {
   background: var(--accent-two-background);
   border-radius: 4px;
   margin-bottom: 30px;
-  display: flex;
 
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -464,6 +485,7 @@ h6 {
 }
 .work-title {
   margin-bottom: 50px;
+
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -476,15 +498,17 @@ h6 {
 .work-box {
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 0;  
+
   width: 100%;
   min-height: 70px;
   background: rgba(47, 48, 58, 0.8);
-  right: 10%;
+  
 }
 .work-text {
-  color: var(--accent-title-color);
   margin-top: 27px;
+
+  color: var(--accent-title-color);  
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -492,12 +516,14 @@ h6 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+
 /*Блок-Наша команда*/
 .team {
   background-color: var(--accent-two-background);
 }
 .team-title {
   margin-bottom: 50px;
+
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -507,6 +533,7 @@ h6 {
 
 .team-item {
   margin-bottom: 10px;
+
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -539,21 +566,23 @@ h6 {
 }
 .team-social-list {
   display: flex;
-  margin-top: 16px;
-
   justify-content: center;
+
+  margin-top: 16px;
 }
 .team-social-item {
   display: flex;
+  
   width: 44px;
   height: 44px;
 }
 .team-social-link {
   display: flex;
-  width: 100%;
-  height: 100%;
   align-items: center;
   justify-content: center;
+
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -577,17 +606,19 @@ h6 {
 }
 /* Постоянные клиенты */
 .clients-title {
+  margin-bottom: 50px;
+
   color: var(--title-text-color);
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
-  margin-bottom: 50px;
+  text-align: center; 
 }
 .clients-list {
   display: flex;
 }
 .clients-item {
   display: flex;
+
   width: 170px;
   height: 92px;
 }
@@ -596,14 +627,15 @@ h6 {
 }
 .clients-link {
   display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 100%;
   height: 100%;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
-  align-items: center;
-  justify-content: center;
-
+  
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-icon {
@@ -625,6 +657,7 @@ h6 {
   padding-bottom: 60px;
 
   background-color: var(--accent-bacground);
+
   font-size: 14px;
   line-height: 1.71;
 }
@@ -642,44 +675,44 @@ h6 {
 .bottom-addr {
   margin-top: 20px;
 }
-.contacts-bottom a:hover,
-.contacts-bottom a:focus {
-  color: var(--accent-text-color);
-}
 .contacts-bottom a {
   font-style: normal;
   text-decoration: none;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .bottom-socials {
-  margin-left: 70px;
-} */
+.contacts-bottom a:hover,
+.contacts-bottom a:focus {
+  color: var(--accent-text-color);
+}
 .bottom-socials-title {
+  margin-bottom: 20px;
+
   color: var(--accent-title-color);
   font-size: 14px;
   line-height: 0.89;
   text-transform: uppercase;
-  margin-bottom: 20px;
+ 
 }
 .bottom-links {
   display: flex;
 }
 .bottom-social-item {
   display: flex;
+
   width: 44px;
   height: 44px;
 }
-
 .bottom-social-item + .bottom-social-item {
   margin-left: 10px;
 }
 .bottom-social-link {
   display: flex;
-  width: 100%;
-  height: 100%;
   align-items: center;
   justify-content: center;
+
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
 
@@ -694,18 +727,15 @@ h6 {
   fill: var(--accent-title-color);
 }
 
-/* .bottom-send {
-  margin-left: 93px;
-} */
 .bottom-send-title {
+  margin-bottom: 20px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
-  color: var(--accent-title-color);
-  margin-bottom: 20px;
+color: var(--accent-title-color);
 }
 .bottom-form {
   display: flex;
@@ -719,17 +749,20 @@ h6 {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background: inherit;
+
   color: rgba(255, 255, 255, 0.6);
 }
 .bottom-form-input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-
   color: rgba(255, 255, 255, 0.6);
 }
 .bottom-send-button {
   display: flex;
+
+  margin-left: 12px;
+
   min-width: 200px;
   height: 50px;
   padding: 10px 28px;
@@ -737,31 +770,30 @@ h6 {
   border-radius: 4px;
   border: transparent;
   cursor: pointer;
-
-  color: var(--accent-title-color);
   background-color: var(--button-background);
+
+  color: var(--accent-title-color); 
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.06em;
-
-  margin-left: 12px;
+  letter-spacing: 0.06em; 
 }
 .bottom-send-icon {
   width: 24px;
   height: 24px;
   margin-left: 10px;
   margin-bottom: 0;
+
   fill: var(--accent-title-color);
 }
 /*Портфолио*/
 .button.secondary {
   padding: 6px 22px;
-
-  color: var(--title-text-color);
   background-color: var(--accent-two-background);
+
+  color: var(--title-text-color); 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -770,8 +802,9 @@ h6 {
 }
 .filters {
   display: flex;
-  margin-bottom: 50px;
   justify-content: center;
+
+  margin-bottom: 50px;
 }
 .filters .push + .push {
   margin-left: 8px;
@@ -816,10 +849,11 @@ h6 {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-list .desc {
+  margin-top: 4px;
+
   color: var(--primary-text-color);
   font-size: 16px;
-  line-height: 1.87;
-  margin-top: 4px;
+  line-height: 1.87;  
 }
 .portfolio-text {
   border: 1px solid var(--portfolio-box-color);
@@ -844,15 +878,16 @@ h6 {
 .portfolio-overlay {
   position: absolute;
   transform: translateY(0);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  height: 100%;
-
-  background: rgba(33, 150, 243, 0.9);
   padding-top: 63px;
   padding-bottom: 63px;
   padding-left: 24px;
   padding-right: 24px;
+
+  height: 100%;
+  background: rgba(33, 150, 243, 0.9);
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .portfolio-info {
   font-size: 18px;
