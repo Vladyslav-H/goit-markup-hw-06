@@ -46,12 +46,62 @@
             </div>
             <div  class="hero-backdrop is-hidden" data-modal>
                 <div class="hero-modal">
-                   <button  type="button" class="button-modal" data-modal-close><svg class="icon-modal" fill="none" xmlns="http://www.w3.org/2000/svg"  width="18px"
-  height="18px" viewBox="0 0 18 18">
-                    <path
-                        d="M15 4.108 13.892 3 9.5 7.392 5.108 3 4 4.108 8.392 8.5 4 12.892 5.108 14 9.5 9.608 13.892 14 15 12.892 10.608 8.5 15 4.108Z"
-                        fill="#000" />
-                </svg></button> 
+                   <button  type="button" class="button-modal" data-modal-close>
+                    <svg class="icon-modal" width="18px" height="18px">
+                        <use href="./images/symbol-defs-mod.svg#icon-close"></use>
+                    </svg></button>
+                
+                <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+                <form class="modal-form">
+
+                    <div class="form-field">                       
+                    <label for="username">Имя</label>
+                    <input class="modal-form-input" type="text" name="username" id="username" placeholder=" "/>
+                     
+                   <svg class="form-icon" width="18px" height="18px">
+                  <use href="./images/symbol-defs-mod.svg#icon-person-mod"></use>
+                   </svg>
+                     
+                    </div>
+                    <div class="form-field">
+                    <label for="tel">Телефон</label>
+                    <input class="modal-form-input" type="tel" name="tel" id="tel" placeholder=" " />
+                     
+                    <svg class="form-icon" width="18px" height="18px">
+                        <use href="./images/symbol-defs-mod.svg#icon-phone-mod"></use>
+                    </svg>
+                     
+                    </div>
+                    <div class="form-field">
+                    <label for="mail">Почта</label>
+                    <input class="modal-form-input" type="email" name="mail" id="mail" placeholder=" " />
+                     
+                    <svg class="form-icon" width="18px" height="18px">
+                        <use href="./images/symbol-defs-mod.svg#icon-email-mod"></use>
+                    </svg>
+                     
+                    </div>
+                    <div class="form-field">
+                    <label class="comment" for="comment">Комментарий</label>
+                    <textarea  name="comment" rows="7" id="comment" placeholder="Введите текст"></textarea>
+                    </div>
+                   
+
+        <div class="checkbox-field">
+                    <label class="checkbox-label"> 
+                    <input class="checkbox-input" type="checkbox" name="agreement conditions" />
+                     
+                        <svg class="checkbox-icon-check" width="16px" height="15px">
+                            <use href="./images/symbol-defs-mod.svg#icon-check"></use>
+                        </svg>                  
+                Соглашаюсь с рассылкой и принимаю
+                <a class="checkbox-link" href="" target="_blank" rel="noopener noreferrer">Условия договора</a>
+                    
+                    </label>
+                </div>
+                    
+                    <button type="submit" class="modal-block-button">Отправить</button>
+                </form> 
                 </div>
             </div>
         </section>
@@ -259,6 +309,18 @@
                                 <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                             </svg></a></li>
                 </ul>
+                
+                </div>
+                <div class="bottom-send">
+                    <p class="bottom-send-title">Подпишитесь на рассылку</p>
+                    <form class="bottom-form">
+                        <label for="email"></label>
+                        <input class="bottom-form-input" type="email" name="mail" id="email" placeholder="E-mail" />
+                        <button type="submit" class="bottom-send-button">Подписаться
+                            <svg class="bottom-send-icon" width="24px" height="24px">
+                            <use href="./images/symbol-defs-mod.svg#icon-send"></use>
+                        </svg></button>
+                    </form>
             </div>
         </div>
     </footer>
